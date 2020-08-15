@@ -24,11 +24,16 @@ Inicio
               Se (a = b) e (b = C) entao
               Escreva("O triângulo infromado é um triângulo equilatero ", nome)
                senao
-                se (a = b) e (b <> c) entao
-                  Escreval("O triângulo infromado é um triângulo Isó", nome)
-                   senão
-                     Escreval("O triângulo infromado é um triângulo Escaleno ", nome)
-                fimse
+                se (a <> b) e (b = C) entao
+                 Escreval("O triângulo infromado é um triângulo Isó ", nome)
+                  senao
+                   se (a = b) e (b <> c) entao
+                    Escreval("O triângulo infromado é um triângulo Isó ", nome)
+                     senão
+
+                      Escreval("O triângulo infromado é um triângulo Escaleno ", nome)
+                   fimse
+               fimse
               fimse
               escreval()
          escreval("Deseja continuar ", nome, "? (s ou n)")
